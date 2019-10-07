@@ -136,7 +136,7 @@ $ curljson -XGET http://127.0.0.1:5000/blood-current-position
 
 The json output will be like the example above containing the 8 blood types and current level of each.
 
-#### 2. Docking NiFi and Elasticsearch with Kibana
+#### 2. Docking and setting up Nifi 
 
 Download NiFi:
 
@@ -153,9 +153,28 @@ docker run --name nifi \
   apache/nifi:latest
 ```
 
--------------
+Then check in the browser by accessing the URL:
 
-docker pull nshou/elasticsearch-kibana
-docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana
+[http://localhost:8080/nifi/](http://localhost:8080/nifi/)
 
+XXX
+
+#### 3. Docking and setting up Elasticsearch with Kibana
+
+Download Elasticsearch and Kibana:
+
+```shell
+$ docker pull nshou/elasticsearch-kibana
+```
+
+And then start the docker with the commands:
+
+```shell
+docker run --name elasticsearch-kibana \
+  -p 9200:9200 -p 5601:5601 \
+  -d \
+  nshou/elasticsearch-kibana:latest
+```
+
+XXX
 
