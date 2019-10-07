@@ -102,7 +102,7 @@ Status is transformed into numbers, and dates are added with timezone, making it
 
 ### Quick start
 
-You need to have Python-3 installed on the virtualenv machine and docker. 
+You need to have Python-3 installed on the virtualenv machine and docker. Both dockers must be running with Elasticsearch-Kibana and NiFi for the pipline. 
 
 For the tests just follow the steps described below:
 
@@ -136,7 +136,7 @@ $ curljson -XGET http://127.0.0.1:5000/blood-current-position
 
 The json output will be like the example above containing the 8 blood types and current level of each.
 
-#### 2. Docking and setting up Nifi 
+#### 2. Docking and setting up NiFi 
 
 Download NiFi:
 
@@ -157,7 +157,7 @@ Then check in the browser by accessing the URL:
 
 [http://localhost:8080/nifi/](http://localhost:8080/nifi/)
 
-XXX
+@TODO: add comments here about configurations...
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
@@ -176,5 +176,6 @@ $ docker run --name elasticsearch-kibana \
   nshou/elasticsearch-kibana:latest
 ```
 
-XXX
+@TODO: add comments here about configurations...
+
 
