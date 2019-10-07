@@ -2,6 +2,8 @@
 
 [![N|Solid](https://raw.githubusercontent.com/edersoncorbari/movie-rec/master/doc/img/open-source-logo.png)](https://en.wikipedia.org/wiki/Open_source)
 
+[![N|Solid](https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/blood-logo.png)](https://en.wikipedia.org/wiki/Open_source)
+
 Project to collect data on the current blood stock position of the Pro-Blood Foundation of the state of São Paulo Brazil.
 
 curljson -XGET http://localhost:5000/blood-current-position
