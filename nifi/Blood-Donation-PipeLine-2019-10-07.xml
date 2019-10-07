@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>5e951050-016d-1000-2214-4fa96cbef78d</groupId>
+    <name>Blood-Donation-PipeLine-2019-10-07</name>
+    <snippet>
+        <processGroups>
+            <id>b6ae63c9-4bdf-328b-0000-000000000000</id>
+            <parentGroupId>93537a66-89cb-3119-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>0100154f-1cd4-31cc-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>68603286-2895-3773-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>232d7d8b-e8ac-397d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>483cc199-77b5-336b-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>232d7d8b-e8ac-397d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <selectedRelationships>original</selectedRelationships>
+                    <selectedRelationships>split</selectedRelationships>
+                    <source>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>2a4d7627-28d1-35bc-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>5d2394cc-32aa-35a9-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>cbf50a91-1fff-383d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>232d7d8b-e8ac-397d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8382811b-ebd0-39e3-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>2a4d7627-28d1-35bc-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>b6ae63c9-4bdf-328b-0000-000000000000</groupId>
+                        <id>18a1dafb-fe72-3bec-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processors>
+                    <id>18a1dafb-fe72-3bec-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-837.0880126953125</x>
+                        <y>373.3979949951172</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.9.2</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>URL</key>
+<value>
+    <name>URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Filename</key>
+<value>
+    <name>Filename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>
+    <name>Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>
+    <name>Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>
+    <name>Data Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>User Agent</key>
+<value>
+    <name>User Agent</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Accept Content-Type</key>
+<value>
+    <name>Accept Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>redirect-cookie-policy</key>
+<value>
+    <name>redirect-cookie-policy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>URL</key>
+<value>http://192.168.0.5:5000/blood-current-position</value>
+                            </entry>
+                            <entry>
+<key>Filename</key>
+<value>blood-donation-${now():toNumber()}.json</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Username</key>
+                            </entry>
+                            <entry>
+<key>Password</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>User Agent</key>
+                            </entry>
+                            <entry>
+<key>Accept Content-Type</key>
+<value>application/json</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>redirect-cookie-policy</key>
+<value>default</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>5 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Blood Donation Service</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GetHTTP</type>
+                </processors>
+                <processors>
+                    <id>232d7d8b-e8ac-397d-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-541.2933082580566</x>
+                        <y>622.40496301651</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-elasticsearch-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.9.2</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>elasticsearch-http-url</key>
+<value>
+    <name>elasticsearch-http-url</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>
+    <name>Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>
+    <name>Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-connect-timeout</key>
+<value>
+    <name>elasticsearch-http-connect-timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-response-timeout</key>
+<value>
+    <name>elasticsearch-http-response-timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-proxy-host</key>
+<value>
+    <name>elasticsearch-http-proxy-host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-proxy-port</key>
+<value>
+    <name>elasticsearch-http-proxy-port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-username</key>
+<value>
+    <name>proxy-username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-password</key>
+<value>
+    <name>proxy-password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-es-id-attr</key>
+<value>
+    <name>put-es-id-attr</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-es-index</key>
+<value>
+    <name>put-es-index</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-es-type</key>
+<value>
+    <name>put-es-type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Character Set</key>
+<value>
+    <name>Character Set</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-es-batch-size</key>
+<value>
+    <name>put-es-batch-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-es-index-op</key>
+<value>
+    <name>put-es-index-op</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>elasticsearch-http-url</key>
+<value>http://172.17.0.3:9200</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Username</key>
+                            </entry>
+                            <entry>
+<key>Password</key>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-connect-timeout</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-response-timeout</key>
+<value>15 secs</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-proxy-host</key>
+                            </entry>
+                            <entry>
+<key>elasticsearch-http-proxy-port</key>
+                            </entry>
+                            <entry>
+<key>proxy-username</key>
+                            </entry>
+                            <entry>
+<key>proxy-password</key>
+                            </entry>
+                            <entry>
+<key>put-es-id-attr</key>
+                            </entry>
+                            <entry>
+<key>put-es-index</key>
+<value>blood-donation-${now():format('yyyy-MM-dd')}</value>
+                            </entry>
+                            <entry>
+<key>put-es-type</key>
+<value>nested</value>
+                            </entry>
+                            <entry>
+<key>Character Set</key>
+<value>UTF-8</value>
+                            </entry>
+                            <entry>
+<key>put-es-batch-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>put-es-index-op</key>
+<value>index</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Put Elastic Index</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>retry</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.elasticsearch.PutElasticsearchHttp</type>
+                </processors>
+                <processors>
+                    <id>2a4d7627-28d1-35bc-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-199.84862055209032</x>
+                        <y>379.0996938932358</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.9.2</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>JsonPath Expression</key>
+<value>
+    <name>JsonPath Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>
+    <name>Null Value Representation</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>JsonPath Expression</key>
+<value>$.*</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>empty string</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Split Services</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>split</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.SplitJson</type>
+                </processors>
+                <processors>
+                    <id>68603286-2895-3773-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-238.4896764755249</x>
+                        <y>934.6024254560471</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.9.2</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>log-level</key>
+<value>
+    <name>log-level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>log-prefix</key>
+<value>
+    <name>log-prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>log-message</key>
+<value>
+    <name>log-message</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>log-level</key>
+<value>info</value>
+                            </entry>
+                            <entry>
+<key>log-prefix</key>
+                            </entry>
+                            <entry>
+<key>log-message</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Success</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.LogMessage</type>
+                </processors>
+                <processors>
+                    <id>cbf50a91-1fff-383d-0000-000000000000</id>
+                    <parentGroupId>b6ae63c9-4bdf-328b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-846.9212596923262</x>
+                        <y>940.6869981071927</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.9.2</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>log-level</key>
+<value>
+    <name>log-level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>log-prefix</key>
+<value>
+    <name>log-prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>log-message</key>
+<value>
+    <name>log-message</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>log-level</key>
+<value>info</value>
+                            </entry>
+                            <entry>
+<key>log-prefix</key>
+                            </entry>
+                            <entry>
+<key>log-message</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Fail</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.LogMessage</type>
+                </processors>
+            </contents>
+            <name>Blood Donation PipeLine</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>10/07/2019 19:16:22 UTC</timestamp>
+</template>
