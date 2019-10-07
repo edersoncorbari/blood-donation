@@ -92,6 +92,13 @@ With python micro-service using the BeautifulSoup library and collected this inf
 ]
 ```
 
+Status is transformed into numbers, and dates are added with timezone, making it easy to create views with Kibana.
+
+| Status | Portuguese | English    |
+| ------ | ---------  | ---------- |
+| 0      | crítico    | critical   |
+| 1      | emergência | emergency  | 
+| 2      | estável    | stable     | 
 
 
 -------------
