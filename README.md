@@ -122,9 +122,25 @@ $ pipenv shell
 $ pipenv install
 ```
 
+Starting the server:
+
+```shell
+$ ./server.py
+```
+
+In another terminal either run the command below, or use the URL in the browser:
+
+```shell
+$ curljson -XGET http://127.0.0.1:5000/blood-current-position
+```
+
+The json output will be like the example above containing the 8 blood types and current level of each.
+
+#### 2. Docking Nifi and Elasticsearch with Kibana
+
 
 -------------
-curljson -XGET http://localhost:5000/blood-current-position
+
 
 docker pull nshou/elasticsearch-kibana
 docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana
