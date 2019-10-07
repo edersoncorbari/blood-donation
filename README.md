@@ -138,7 +138,20 @@ The json output will be like the example above containing the 8 blood types and 
 
 #### 2. Docking NiFi and Elasticsearch with Kibana
 
+Download NiFi:
 
+```shell
+$ docker pull apache/nifi
+```
+
+And then start the docker with the commands:
+
+```shell
+docker run --name nifi \
+  -p 8080:8080 \
+  -d \
+  apache/nifi:latest
+```
 
 -------------
 
