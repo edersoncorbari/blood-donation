@@ -22,6 +22,8 @@ This project uses the following technologies:
   * Elasticsearch
   * Kibana
 
+The machine with NiFi and Elasticsearch with Kibana are dockerized.
+
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/blood-donation-diagram.png">
 </p>
