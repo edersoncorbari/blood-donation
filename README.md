@@ -1,7 +1,9 @@
 # Bood Donation
 
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/blood-logo.png">
+<a href="http://www.prosangue.sp.gov.br">
+<img border="0" alt="Pró-Sangue Foundation" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/blood-logo.png">
+</a>
 </p>
 
 Project to collect data on the current **Blood Stock Position** of the Pró-Sangue Foundation of the state of São Paulo Brazil.
