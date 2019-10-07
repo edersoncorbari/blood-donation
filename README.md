@@ -147,7 +147,7 @@ $ docker pull apache/nifi
 And then start the docker with the commands:
 
 ```shell
-docker run --name nifi \
+$ docker run --name nifi \
   -p 8080:8080 \
   -d \
   apache/nifi:latest
@@ -170,7 +170,7 @@ $ docker pull nshou/elasticsearch-kibana
 And then start the docker with the commands:
 
 ```shell
-docker run --name elasticsearch-kibana \
+$ docker run --name elasticsearch-kibana \
   -p 9200:9200 -p 5601:5601 \
   -d \
   nshou/elasticsearch-kibana:latest
