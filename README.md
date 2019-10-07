@@ -100,6 +100,28 @@ Status is transformed into numbers, and dates are added with timezone, making it
 | 1      | emergência | emergency  | 
 | 2      | estável    | stable     | 
 
+### Quick start
+
+You need to have Python-3 installed on the virtualenv machine and docker. 
+
+For the tests just follow the steps described below:
+
+#### 1. Get the code
+
+Now run the commands below to compile the project:
+
+```shell
+$ git clone https://github.com/edersoncorbari/blood-donation.git
+$ cd blood-donation/web-scraping
+```
+
+Enter pipenv at the root of the *web-scraping* folder for the tests:
+
+```shell
+$ pipenv shell
+$ pipenv install
+```
+
 
 -------------
 curljson -XGET http://localhost:5000/blood-current-position
