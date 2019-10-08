@@ -228,5 +228,27 @@ Click in (*Explore on my own*). Then click management in the left sidebar, and c
 
 When you start the pipeline, NiFi itself will create the index for Elasticsearch and you can map the index on this screen.
 
+#### 3. Starting full flow
 
+It is important to check your network settings. Check the NiFi IP number, the network 172.xx.x.x/16.
+
+```shell
+$ docker exec -it -u0 nifi ip a
+```
+
+Do the same thing for the docker with Elasticsearch and Kibana:
+
+
+```shell
+$ docker exec -it -u0 elasticsearch-kibana ip a
+```
+
+>Note: Also check your local IP, a visible IP on the network where dockers have access.
+
+Start web scraper on your local machine:
+
+```shell
+$ cd web-scraping && pipenv shell
+$ ./server
+```
 
