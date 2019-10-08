@@ -252,3 +252,13 @@ $ cd web-scraping && pipenv shell
 $ ./server
 ```
 
+In NiFi right click (*Blood Donation Service*) in properties changes to your local IP where the web scraper is running.
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-config-processor.png">
+</p>
+
+Now! Do the same thing for the processor (*Put Elastic Index*) and put the IP of the docker running Elasticsearch with Kibana.
+
+Right click on NiFi flow and one (*Start*) in the pipeline.
+
