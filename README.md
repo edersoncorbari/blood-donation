@@ -222,4 +222,11 @@ You will see the Kibana screen:
 
 Click in (*Explore on my own*). Then click management in the left sidebar, and click on Kibana (*Index Pattern*).
 
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/kibana-map-index.png">
+</p>
+
 When you start the pipeline, NiFi itself will create the index for Elasticsearch and you can map the index on this screen.
+
+
+
