@@ -160,7 +160,7 @@ Wait about 2 minutes and make sure NiFi has gone up to the address:
 You will see the NiFi screen:
 
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-start.png">
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-start.png">
 </p>
 
 >Note: You can use the (*docker ps*) command to see the status.
