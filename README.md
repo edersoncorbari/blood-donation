@@ -185,6 +185,12 @@ Select template (*Blood-Donation-PipeLine-2019-10-07*) and import. Now you go to
 <img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-blood.png">
 </p>
 
+Within the process group is the flow. That reads the Python web-scraper and sends it to ElasticSearch.
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-blood-flow.png">
+</p>
+
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
