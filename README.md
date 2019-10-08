@@ -171,6 +171,14 @@ Now! then right click on (*Upload template*), and select the template that is in
 <img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-template.png">
 </p>
 
+Click (Upload) to upload the template.
+
+Now click on the bar in templates. Simply drag and drop the component into the flow area.
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-template-icon.png">
+</p>
+
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
