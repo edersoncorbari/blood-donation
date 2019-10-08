@@ -191,6 +191,7 @@ Within the process group is the flow. That reads the Python web-scraper and send
 <img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-blood-flow.png">
 </p>
 
+Before starting the flow, it is necessary to raise the docker with Elasticsearch.
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
