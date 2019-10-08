@@ -262,3 +262,27 @@ Now! Do the same thing for the processor (*Put Elastic Index*) and put the IP of
 
 Right click on NiFi flow and one (*Start*) in the pipeline.
 
+#### 4. Kibana
+
+In Kibana it is already possible to map the created index. The index name is blood-donation prefixed with the date of the day.
+
+Map the index as the following images:
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/kibana-index-1.png">
+</p>
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/kibana-index-2.png">
+</p>
+
+After mapping, click the (Discover) button in the left sidebar and view the data.
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/kibana-index-3.png">
+</p>
+
+>Note: Select the date for (Today) to display the data.
+
+It is now possible to create some visualizations and dashboards to analyze the data.
+
