@@ -179,6 +179,12 @@ Now click on the bar in templates. Simply drag and drop the component into the f
 <img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-template-icon.png">
 </p>
 
+Select template (*Blood-Donation-PipeLine-2019-10-07*) and import. Now you go to a process group:
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-blood.png">
+</p>
+
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
