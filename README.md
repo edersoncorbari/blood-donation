@@ -153,11 +153,17 @@ $ docker run --name nifi \
   apache/nifi:latest
 ```
 
-Then check in the browser by accessing the URL:
+Wait about 2 minutes and make sure NiFi has gone up to the address:
 
 [http://localhost:8080/nifi/](http://localhost:8080/nifi/)
 
-@TODO: add comments here about configurations...
+You will see the NiFi screen:
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-start.png">
+</p>
+
+>Note: You can use the (*docker ps*) command to see the status.
 
 #### 3. Docking and setting up Elasticsearch with Kibana
 
