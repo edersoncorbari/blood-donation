@@ -165,6 +165,13 @@ You will see the NiFi screen:
 
 >Note: You can use the (*docker ps*) command to see the status.
 
+Now! then right click on (*Upload template*), and select the template that is in the project directory: (*nifi/Blood-Donation-PipeLine-2019-10-07.xml*)
+
+<p align="center"> 
+<img border="0" src="https://raw.githubusercontent.com/edersoncorbari/blood-donation/master/doc/img/nifi-template.png">
+</p>
+
+
 #### 3. Docking and setting up Elasticsearch with Kibana
 
 Download Elasticsearch and Kibana:
