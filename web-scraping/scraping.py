@@ -36,78 +36,17 @@ class BloodScraping(object):
         else:
             raise Exception('No found type of status...')
 
+    def bloodType(self, index) -> int:
+        return ['O+', 'A+', 'AB+', 'B+', 'O-', 'A-', 'AB-', 'B-'][index]
+
     def __prepareData(self):
-        # 1. O+
-        b1 = {
-            "blood": "O+",
-            "status": self.numStatus(
-                self.stock.find(
-                    id="cphConteudo_Estoque1_Repeater1_lblO_0")['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
+        bloods = []
+        element = 'cphConteudo_Estoque1_Repeater1_lblO_'
 
-        # 2. A+
-        b2 = {
-            "blood": "A+",
-            "status": self.numStatus(
-                self.stock.find(
-                    id="cphConteudo_Estoque1_Repeater1_lblO_1")['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
+        for i in range(8):
+            bloods.append(
+                {'blood': self.bloodType(i),
+                 'status': self.numStatus(self.stock.find(id=element + str(i))['class'][0]),
+                 'update': self.update, 'timestamp': self.timestamp})
 
-        # 3. AB+
-        b3 = {
-            "blood": "AB+",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_2')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        # 4. B+
-        b4 = {
-            "blood": "B+",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_3')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        # 5. O-
-        b5 = {
-            "blood": "O-",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_4')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        # 6. A-
-        b6 = {
-            "blood": "A-",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_5')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        # 7. AB-
-        b7 = {
-            "blood": "AB-",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_6')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        # 8. B-
-        b8 = {
-            "blood": "B-",
-            "status": self.numStatus(
-                self.stock.find(
-                    id='cphConteudo_Estoque1_Repeater1_lblO_7')['class'][0]),
-            "update": self.update,
-            "timestamp": self.timestamp}
-
-        bloods = (b1, b2, b3, b4, b5, b6, b7, b8)
         return json.loads(json.dumps(bloods))
