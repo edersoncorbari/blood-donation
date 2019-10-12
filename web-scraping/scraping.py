@@ -36,7 +36,7 @@ class BloodScraping(object):
         else:
             raise Exception('No found type of status...')
 
-    def bloodType(self, index) -> int:
+    def bloodType(self, index: str) -> str:
         return ['O+', 'A+', 'AB+', 'B+', 'O-', 'A-', 'AB-', 'B-'][index]
 
     def __prepareData(self):
